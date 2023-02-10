@@ -1,0 +1,31 @@
+bcl2fastq:
+  barcode_mismatch: 1
+  SampleSheet:
+   /path/to/csv
+  RunFolder:
+   /path/to/Runfolder
+  other_params: ""
+  threads: 12
+
+others:
+  fastQC_threads: 1
+  SHA256_threads: 1
+
+cutadapt:
+  cutadapt_active: True  
+  cutadapt_threads: 1
+  adapters: 
+    - CTGTCTCTTATACACATCT
+    - ACGGATCGATCGATCGATCGAT
+  adapter_type: 
+    - a
+    - g
+  other_params: ""
+
+rseqc:
+  rseqc_active: True
+  gtf_file: "/path/to/gtf" 
+  genomeDir: "/path/to/genomeDir"
+  strandedness: False 
+  STAR_threads: 12
+  other_params: ""
