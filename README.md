@@ -1,4 +1,4 @@
-# Preprocessing and QC data
+# Snakemake workflow for demultiplex and QC of NGS run data
 
 Snakemake workflow to generate demultiplexed FASTQ files, FASTQC and FASTQSCREEN reports for each fastq file, and summarize FASTQ and FASTQSCREEN reports on a per lane basis.
 
