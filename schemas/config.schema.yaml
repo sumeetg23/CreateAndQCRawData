@@ -1,3 +1,5 @@
+$schema: 'http://json-schema.org/draft-04/schema#'
+
 description: snakemake configuration file
 
 bcl2fastq:
@@ -29,6 +31,17 @@ others:
   required:
     - fastQC_threads
     - SHA256_threads
+
+gocryptfs:
+  type: object
+  properties:
+    gocryptfs_version:
+      type: string
+    gocryptfs_active:
+      type: boolean
+  required:
+    - gocryptfs_version
+    - gocryptfs_active
 
 cutadapt:
   type: object

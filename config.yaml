@@ -1,9 +1,9 @@
 bcl2fastq:
   barcode_mismatch: 1
   SampleSheet:
-   /path/to/csv
+   /lab/htdata/230203_A01100_0265_AHWCCYDRX2/samplesheet.csv
   RunFolder:
-   /path/to/Runfolder
+   /lab/htdata/230203_A01100_0265_AHWCCYDRX2/
   other_params: ""
   threads: 12
 
